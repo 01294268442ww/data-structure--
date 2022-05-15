@@ -1,0 +1,5 @@
+﻿  Queue.c
+  test.c
+D:\C C++\Queue\Queue\test.c(14,16): warning C4020: “QueueBack”: 实参太多
+  正在生成代码...
+  Queue.vcxproj -> D:\C C++\Queue\x64\Debug\Queue.exe
