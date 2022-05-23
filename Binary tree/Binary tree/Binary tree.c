@@ -6,58 +6,37 @@ BTNode* BuyBTNode(BTDataType x)
 	newNode->_data = x;
 	newNode->_left = NULL;
 	newNode->_right = NULL;
-
+	return newNode;
 }
 
 
-BTNode* BinaryTreeCreate(BTDataType* a, int n, int* pi)
+BTNode* CreatBinaryTree()
 {
-	assert(pi);
-	assert(a);
+	BTNode* node1 = BuyBTNode(1);
+	BTNode* node2 = BuyBTNode(2);
+	BTNode* node3 = BuyBTNode(3);
+	BTNode* node4 = BuyBTNode(4);
+	BTNode* node5 = BuyBTNode(5);
+	BTNode* node6 = BuyBTNode(6);
 
-	// 通过前序遍历的数组"ABD ##E #H# #CF ##G ##"构建二叉树
+	node1->_left = node2;
+	node1->_right = node4;
+	node2->_left = node3;
+	node4->_left = node5;
+	node4->_right = node6;
 
-	BTNode* n1 = BuyBTNode(pi[0]);//a
-	BTNode* n2 = BuyBTNode(pi[1]);//b
-	BTNode* n3 = BuyBTNode(pi[2]);//d
-	BTNode* n4 = BuyBTNode(pi[3]);//#
-	BTNode* n5 = BuyBTNode(pi[4]);//#
-	BTNode* n6 = BuyBTNode(pi[5]);//e
-	BTNode* n7 = BuyBTNode(pi[6]);//#
-	BTNode* n8 = BuyBTNode(pi[7]);//#
-	BTNode* n9 = BuyBTNode(pi[8]);//h
-	BTNode* n10 = BuyBTNode(pi[9]);//#
-	BTNode* n11 = BuyBTNode(pi[10]);//#
-	BTNode* n12 = BuyBTNode(pi[11]);//c
-	BTNode* n13 = BuyBTNode(pi[12]);//f
-	BTNode* n14 = BuyBTNode(pi[13]);//#
-	BTNode* n15 = BuyBTNode(pi[14]);//#
-	BTNode* n16 = BuyBTNode(pi[15]);//g
-	BTNode* n17 = BuyBTNode(pi[16]);//#
-	BTNode* n18 = BuyBTNode(pi[17]);//#
-
-	n1->_left = n2;
-	n1->_right = n7;
-	n2->_left = n3;
-	n2->_right = n6;
-	n3->_left = n4;
-	n3->_right = n5;
-	n6->_left = n7;
-	n6->_right = n9;
-	n12->_left = n13;
-	n12->_right = n16;
-	n13->_left = n14;
-	n13->_right = n15;
-	n16->_left = n17;
-	n16->_right = n18;
-	
+	return node1;
 }
 
 void BinaryTreeDestory(BTNode** root)
 {
-
-
-
+	if (*root == NULL)
+	{
+		return;
+	}
+	BinaryTreeDestory(&(*root)->_left);
+	BinaryTreeDestory(&(*root)->_right);
+	free(*root);
 }
 
 int BinaryTreeSize(BTNode* root)
@@ -130,7 +109,7 @@ void BinaryTreePrevOrder(BTNode* root)
 		printf("# ");
 		return;
 	}
-	printf("%c ", root->_data);
+	printf("%d ", root->_data);
 	BinaryTreePrevOrder(root->_left);
 	BinaryTreePrevOrder(root->_right);
 }
@@ -143,7 +122,7 @@ void BinaryTreeInOrder(BTNode* root)
 		return;
 	}
 	BinaryTreePrevOrder(root->_left);
-	printf("%c ", root->_data);
+	printf("%d ", root->_data);
 	BinaryTreePrevOrder(root->_right);
 }
 
@@ -156,7 +135,7 @@ void BinaryTreePostOrder(BTNode* root)
 	}
 	BinaryTreePrevOrder(root->_left);
 	BinaryTreePrevOrder(root->_right);
-	printf("%c ", root->_data);
+	printf("%d ", root->_data);
 }
 
 void BinaryTreeLevelOrder(BTNode* root)
@@ -167,8 +146,12 @@ void BinaryTreeLevelOrder(BTNode* root)
 		return;
 	}
 
-	printf("%c ", root->_data);
-	BinaryTreePrevOrder(root->_left);
-	BinaryTreePrevOrder(root->_right);
+	
+
+	
+}
+
+bool BinaryTreeComplete(BTNode* root)
+{
 	
 }
