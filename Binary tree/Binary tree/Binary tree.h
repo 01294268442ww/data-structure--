@@ -1,9 +1,12 @@
+//Binary tree.h
 #pragma once
 #include<stdio.h>
 #include<stdlib.h>
 #include<assert.h>
 #include<stdbool.h>
-typedef int BTDataType;
+#include<string.h>
+#include"Queue.h"
+typedef char BTDataType;
 
 typedef struct BinaryTreeNode
 {
@@ -13,9 +16,9 @@ typedef struct BinaryTreeNode
 }BTNode;
 
 // 通过前序遍历的数组"ABD##E#H##CF##G##"构建二叉树
-BTNode* CreatBinaryTree();
+BTNode* BinaryTreeCreate(BTDataType* a, int n, int* pi);
 // 二叉树销毁
-void BinaryTreeDestory(BTNode** root);
+void BinaryTreeDestory(BTNode* root);
 // 二叉树节点个数
 int BinaryTreeSize(BTNode* root);
 // 二叉树叶子节点个数

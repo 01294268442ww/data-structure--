@@ -1,22 +1,35 @@
+//test.c
 #include"Binary tree.h"
 
 void testTree()
 {
-	BTNode* root = CreatBinaryTree();
-	BinaryTreePrevOrder(root);
-	printf("\n");
-	BinaryTreeInOrder(root);
-	printf("\n");
-	BinaryTreePostOrder(root);
+	BTDataType* a = "ABD##E#H##CF##G##";
+	int len = strlen(a);
+	int i = 0;
+	BTNode* tree = BinaryTreeCreate(a, len, &i);
+
+	printf("PrevOrder");
+	BinaryTreePrevOrder(tree);
 	printf("\n");
 
-	BinaryTreeLeafSize(root);
+	printf("InOrder");
+	BinaryTreeInOrder(tree);
+	printf("\n");
 
-	BinaryTreeLevelKSize(root, 2);
-	//≤„–Ú±È¿˙
-	//BinaryTreeLevelOrder(root);
+	printf("PostOrder");
+	BinaryTreePostOrder(tree);
+	printf("\n");
 
-	BinaryTreeDestory(root);
+	printf("LeafSize: %d\n", BinaryTreeLeafSize(tree));
+	printf("LeavelKsize: %d\n", BinaryTreeLevelKSize(tree, 3));
+	printf("TreeSize: %d\n", BinaryTreeSize(tree));
+
+	BTNode*tmp=BinaryTreeFind(tree, 4);
+	printf("TreeFind: %p\n", tmp);
+	BinaryTreeLevelOrder(tree);
+	printf("Complete: %d\n", BinaryTreeComplete(tree));
+	BinaryTreeDestory(tree);
+	tree = NULL;
 }
 int main()
 {
