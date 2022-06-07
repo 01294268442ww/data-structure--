@@ -1,0 +1,5 @@
+﻿  SList.c
+  test.c
+D:\C C++\review\review\test.c(6,1): warning C4133: “初始化”: 从“ListNode *”到“SeqList *”的类型不兼容
+  正在生成代码...
+  review.vcxproj -> D:\C C++\review\x64\Debug\review.exe
