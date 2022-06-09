@@ -1,0 +1,8 @@
+﻿  BinaryTree.c
+  Heap.c
+  queue.c
+  test.c
+D:\C C++\6.9\6.9\test.c(6,10): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码...
+test.obj : error LNK2005: main 已经在 Heap.obj 中定义
+D:\C C++\6.9\x64\Debug\6.9.exe : fatal error LNK1169: 找到一个或多个多重定义的符号
