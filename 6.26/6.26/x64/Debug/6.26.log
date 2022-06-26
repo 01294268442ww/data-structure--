@@ -1,0 +1,4 @@
+﻿  源.cpp
+D:\C C++\6.26\6.26\源.cpp(71,25): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\C C++\6.26\6.26\源.cpp(72,25): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  6.26.vcxproj -> D:\C C++\6.26\x64\Debug\6.26.exe
