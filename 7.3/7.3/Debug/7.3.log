@@ -1,0 +1,3 @@
+﻿  Sort.c
+D:\C C++\7.3\7.3\Sort.c(540,19): warning C4047: “==”:“int”与“void *”的间接级别不同
+  7.3.vcxproj -> D:\C C++\7.3\Debug\7.3.exe
