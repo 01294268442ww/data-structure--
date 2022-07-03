@@ -133,7 +133,7 @@ void TestRadixSort()
 	Destroy(Q);
 }
 
-int main()
+int main1()
 {
 	//TestOP();
 	//TestInsertSort();

@@ -18,7 +18,7 @@ void Swap(int* x, int* y)
 }
 
 
-//¼ò´ğ¶Ñ£¬ÅÅÉıĞò
+//½¨´ó¶Ñ£¬ÅÅÉıĞò
 void AdJustDown(int* a, int size, int parent)
 {
 	int child = parent * 2 + 1;
