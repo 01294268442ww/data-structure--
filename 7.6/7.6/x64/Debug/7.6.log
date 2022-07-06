@@ -1,0 +1,9 @@
+﻿  Sort.c
+D:\C C++\7.6\7.6\Sort.c(473,18): warning C4047: “函数”:“Queue *”与“Queue **”的间接级别不同
+D:\C C++\7.6\7.6\Sort.c(473,13): warning C4024: “QueueInit”: 形参和实参 1 的类型不同
+D:\C C++\7.6\7.6\Sort.c(481,21): warning C4047: “函数”:“Queue *”与“Queue **”的间接级别不同
+D:\C C++\7.6\7.6\Sort.c(481,16): warning C4024: “QueueDestroy”: 形参和实参 1 的类型不同
+D:\C C++\7.6\7.6\Sort.c(502,26): warning C4047: “函数”:“QDataType”与“int”的间接级别不同
+D:\C C++\7.6\7.6\Sort.c(502,23): warning C4024: “QueuePush”: 形参和实参 2 的类型不同
+D:\C C++\7.6\7.6\Sort.c(513,30): warning C4047: “=”:“int”与“QDataType”的间接级别不同
+  7.6.vcxproj -> D:\C C++\7.6\x64\Debug\7.6.exe
