@@ -1,0 +1,3 @@
+﻿  test.c
+C:\Users\15144\source\repos\7.16.01\7.16.01\test.c(10,16): warning C4018: “<”: 有符号/无符号不匹配
+  7.16.01.vcxproj -> C:\Users\15144\source\repos\7.16.01\Debug\7.16.01.exe
