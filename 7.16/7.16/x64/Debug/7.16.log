@@ -1,0 +1,3 @@
+﻿  test.cpp
+D:\C C++\7.16\7.16\test.cpp(1146,26): error C2660: “fopen_s”: 函数不接受 2 个参数
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.20348.0\ucrt\stdio.h(102,34): message : 参见“fopen_s”的声明
