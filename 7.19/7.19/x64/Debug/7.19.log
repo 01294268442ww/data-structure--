@@ -1,0 +1,10 @@
+﻿  Person.cpp
+  test.cpp
+D:\C C++\7.19\7.19\test.cpp(78,1): error C2011: “A”:“class”类型重定义
+D:\C C++\7.19\7.19\test.cpp(61): message : 参见“A”的声明
+D:\C C++\7.19\7.19\test.cpp(87,5): error C2084: 函数“int main(void)”已有主体
+D:\C C++\7.19\7.19\test.cpp(70): message : 参见“main”的前一个定义
+D:\C C++\7.19\7.19\test.cpp(90,3): error C2027: 使用了未定义类型“A”
+D:\C C++\7.19\7.19\test.cpp(61): message : 参见“A”的声明
+D:\C C++\7.19\7.19\test.cpp(94,1): fatal error C1004: 发现意外的文件尾
+  正在生成代码...
