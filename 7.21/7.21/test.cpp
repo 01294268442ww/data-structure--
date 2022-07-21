@@ -236,4 +236,67 @@
 //}
 //
 
+//
+//class Gift {
+//public:
+//    int getValue(vector<int> gifts, int n) {
+//        int result = gifts[0];
+//        int times = 1;
+//        for (int i = 1; i < n; i++)
+//        {
+//            if (times != 0)
+//            {
+//                if (gifts[i] == result)
+//                {
+//                    times++;
+//                }
+//                else
+//                {
+//                    times--;
+//                }
+//            }
+//            else
+//            {
+//                result = gifts[i];
+//                times = 1;
+//            }
+//        }
+//        times = 0;
+//        for (int i = 0; i < n; i++)
+//        {
+//            if (gifts[i] == result)
+//                times++;
+//        }
+//        return (times > (n / 2)) ? result : 0;
+//    }
+//};
 
+#include<iostream>
+#include<string>
+using namespace std;
+
+int main()
+{
+    string longer, less;
+    cin >> longer;
+    cin >> less;
+    int hash1[256], hash2[256];
+    for (int i = 0; i < longer.length(); i++)
+    {
+        hash1[longer[i]]++;
+    }
+    for (int i = 0; i < less.length(); i++)
+    {
+        hash2[less[i]]++;
+    }
+    int diff = 0;
+    for (int i = 0; i < 256; i++)
+    {
+        if (hash1[i] != hash2[i])
+        {
+            diff++;
+        }
+    }
+    cout << diff << endl;
+    return 0;
+}
