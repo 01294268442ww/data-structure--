@@ -1,0 +1,6 @@
+﻿  Date.cpp
+D:\C C++\7.23\7.23\Date.cpp(227,10): error C2678: 二进制“=”: 没有找到接受“const Date”类型的左操作数的运算符(或没有可接受的转换)
+D:\C C++\7.23\7.23\Date.cpp(18,13): message : 可能是“Date &Date::operator =(const Date &)”
+D:\C C++\7.23\7.23\Date.cpp(227,10): message : 尝试匹配参数列表“(const Date, Date)”时
+  test.cpp
+  正在生成代码...
