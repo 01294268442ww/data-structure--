@@ -1,6 +1,6 @@
 #include"Date.h"
 
-void test()
+void test1()
 {
 	Date d1;
 	
@@ -38,8 +38,16 @@ void test()
 
 }
 
+void test2()
+{
+	Date d(2022, 7, 25);
+	//cout << d << endl;
+	//d.operator<<(cout);
+	d << cout;
+}
+
 int main()
 {
-	test();
+	test2();
 	return 0;
 }

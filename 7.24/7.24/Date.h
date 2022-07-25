@@ -7,6 +7,10 @@ using namespace std;
 class Date
 {
 public:
+
+	friend inline ostream& operator<<(ostream& out, const Date& d);
+
+	friend inline istream& operator>>(istream& in, Date& d);
 	// 获取某年某月的天数
 	int GetMonthDay(int year, int month)
 	{
@@ -99,8 +103,31 @@ public:
 		cout << _year << "/ " << _month << "/ " << _day << endl;
 	}
 
+	Date* operator&()
+	{
+		return this;
+	}
+
+	const Date* operator&() const
+	{
+		return this;
+	}
+
+
 private:
 	int _year;
 	int _month;
 	int _day;
 };
+
+inline ostream& operator<<(ostream& out, const Date& d)
+{
+	out << d._year << "/ " << d._month << "/ " << d._day;
+	return out;
+}
+
+inline istream& operator>>(istream& in, Date& d)
+{
+	cin >> d._year >> d._month >> d._day;
+	return in;
+}

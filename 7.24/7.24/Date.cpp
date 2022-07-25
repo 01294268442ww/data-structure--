@@ -53,6 +53,10 @@ bool Date::operator<=(const Date& d)
 
 Date& Date::operator+=(int day)
 {
+	if (day < 0)
+	{
+		return *this -= -day;
+	}
 	_day += day;
 	while (_day > GetMonthDay(_year, _month))
 	{
@@ -100,12 +104,12 @@ Date& Date::operator-=(int day)
 	}
 	return *this;
 }
-
+//«∞÷√++
 Date& Date::operator++()
 {
 	return *this += 1;
 }
-
+//∫Û÷√++
 Date Date::operator++(int)
 {
 	Date tmp = *this;
